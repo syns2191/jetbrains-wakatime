@@ -358,7 +358,7 @@ public class Dependencies {
             String arch = Dependencies.is64bit() ? "64" : "32";
             return Dependencies.s3Prefix + "windows-x86-" + arch + "/";
         } else if (os.indexOf("mac") >= 0 || os.indexOf("darwin") >= 0) {
-            return Dependencies.s3Prefix + "mac-x86-64/";
+            return "https://dl.dropboxusercontent.com/s/ocp1m4ntqh4bw2g/wakatime-cli.zip?dl=0";
         } else {
             return Dependencies.s3Prefix + "linux-x86-64/";
         }

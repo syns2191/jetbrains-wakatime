@@ -41,11 +41,11 @@ public class ApiKey extends DialogWrapper {
     @Override
     protected ValidationInfo doValidate() {
         String apiKey = input.getText();
-        try {
-            UUID.fromString(apiKey);
-        } catch (Exception e) {
-            return new ValidationInfo("Invalid api key.");
-        }
+//        try {
+//            UUID.fromString(apiKey);
+//        } catch (Exception e) {
+//            return new ValidationInfo("Invalid api key.");
+//        }
         return null;
     }
 
